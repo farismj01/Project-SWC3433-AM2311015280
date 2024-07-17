@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelPedia - Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HotelPedia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms & Suites</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admin_login.php">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="reservation">
+            <div class="container">
+                <h2 align="center">Book a Room</h2>
+                <p>&nbsp;</p>
+                <form action="reserve.php" method="post">
+                  <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"><br>
+                    <label for="room_type">Room Type:</label>
+                    <select id="room_type" name="room_type">
+                        <option value="Standard Room">Standard Room</option>
+                        <option value="Double Room">Double Room</option>
+                        <option value="Suites Room">Suites Room</option>
+                    </select><br>
+                    <label for="check_in">Check-in Date:</label>
+                    <input type="date" id="check_in" name="check_in" required><br>
+                    <label for="check_out">Check-out Date:</label>
+                    <input type="date" id="check_out" name="check_out" required><br>
+                    <input type="submit" value="Reserve">
+              </form>
+                <p>Review your reservation <a href="review.php">here</a>.</p>
+          </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HotelPedia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

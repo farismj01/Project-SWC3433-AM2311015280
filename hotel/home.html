@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelPedia - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>HotelPedia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms & Suites</a></li>
+                    <li><a href="amenities.html">Amenities</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admin_login.php">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" >
+            <div class="container" style="background-color:#CCC">
+                <h2 style="color:#000">Welcome to HotelPedia</h2>
+                <p style="color:#000">Discover the perfect blend of luxury and comfort at HotelPedia, where every stay is a memorable experience. Nestled in the heart of the city, our hotel offers an oasis of tranquility amidst the bustling urban landscape.</p>
+                <p align="center" style="color:#000"><u><strong>Exceptional Service</strong></u></p>
+                <p style="color:#000">Our dedicated staff is committed to delivering exceptional service, ensuring that your every need is met with a smile. From concierge services to personalized recommendations, we strive to make your stay as comfortable and enjoyable as possible.</p>
+                <p align="center" style="color:#000"><u><strong>Prime Location</strong></u></p>
+                <p style="color:#000">Conveniently located near major attractions, shopping districts, and business centers, HotelPedia offers easy access to everything the city has to offer. Explore the local culture, dine at nearby restaurants, or attend meetings with ease.</p>
+            </div>
+        </section>
+
+        <section class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="image/double 2.jpg" alt="Double Room">
+            </div>
+            <div class="mySlides fade">
+                <img src="image/suite.png" alt="Suite">
+            </div>
+            <div class="mySlides fade">
+                <img src="image/pool.jpg" alt="Pool">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HotelPedia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
